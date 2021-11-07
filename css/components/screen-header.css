@@ -1,0 +1,32 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--horizontal-space);
+  padding-top: 45px;
+  margin-bottom: 15px;
+}
+
+.scr-header__title {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.scr-header__icons span {
+  margin-left: 25px;
+}
+
+.scr-header__icons span:last-child {
+  position: relative;
+}
+.scr-header__new {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 22px;
+  bottom: 22px;
+}
