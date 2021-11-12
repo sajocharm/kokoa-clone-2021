@@ -12,15 +12,130 @@
 }
 
 .main-chat {
-  margin-top: 150px;
+  margin-top: 120px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .chat__timestamp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: khaki;
-  height: 30px;
-  width: 200px;
+  color: white;
+  background-color: #92a4b2;
+  padding: 8px 15px;
   border-radius: 15px;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.message__author {
+  opacity: 0.9;
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 13px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.message__time {
+  opacity: 0.9;
+  font-size: 13px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0;
+  border-top-left-radius: 15px;
+  margin-right: 0;
+  margin-left: 10px;
+}
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:first-child i {
+  font-size: 25px;
+}
+
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply input {
+  padding: 12px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+}
+
+.reply__column:last-child > i,
+.reply__column button {
+  position: absolute;
+  right: -22px;
+  top: 4px;
+}
+
+.reply__column:last-child > i {
+  right: 30px;
+  top: 10px;
+  font-size: 23px;
+}
+
+.reply__column button {
+  background-color: var(--yellow);
+  border: none;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+}
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+.reply i {
+  opacity: 0.5;
+}
+.reply__column button i {
+  opacity: 1;
 }
