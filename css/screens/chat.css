@@ -1,5 +1,5 @@
 #chat-screen {
-  background-color: #abc1d1;
+  background-color: #e9edc9;
   height: 500vh;
 }
 
@@ -20,7 +20,7 @@
 
 .chat__timestamp {
   color: white;
-  background-color: #92a4b2;
+  background-color: #ccd5ae;
   padding: 8px 15px;
   border-radius: 15px;
   font-size: 14px;
@@ -102,7 +102,7 @@
 }
 
 .message-row--own .message__bubble {
-  background-color: var(--yellow);
+  background-color: sandybrown;
   border-top-right-radius: 0;
   border-top-left-radius: 15px;
   margin-right: 0;

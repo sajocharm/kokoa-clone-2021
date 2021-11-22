@@ -57,3 +57,14 @@
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
+.user-component__channel {
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
